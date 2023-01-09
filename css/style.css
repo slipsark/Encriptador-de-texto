@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body
+{
+    background-color: gray;
+}  
+header
+{
+    border: none;
+    width: 100%;
+    text-align: center;
+    color: var(--text);
+    font-weight: bold;
+    color: white;
+}
+                         /* body  */
+main
+{
+    height: 560px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.box-1
+{
+    border: none;
+    width: 450px;   
+}
+.box-1 textarea
+{
+    width: 98.5%;
+    height: 60%;
+    margin-top: 5px;
+    resize: none;
+    border: none;
+    font-size: 14pt;
+    padding-left: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+textarea:focus
+{
+    outline: none;
+}
+.box-1 textarea::placeholder
+{
+    color: black;
+}
+span
+{
+    font-size: 8pt;
+}
+.button-area-1
+{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button
+{
+    width: 200px;
+    height: 50px;
+    font-size: 14pt;
+    border: none;
+    border-radius: 10px;
+    background-color: black; 
+    color: white; 
+    cursor: pointer;  
+}
+button:hover
+{
+    background-color: white;
+    box-shadow: 0 0 8px white;
+    transition: 1s;
+    color: black;
+    font-weight: bold;
+}
+                          /* Part 2 */
+.box-2
+{
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 8px white;
+    background-image: url(../img/wolft-master.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box-2 textarea
+{
+    width: 97.5%;
+    height: 70%;
+    margin-top: 10px;
+    padding-left: 5px;
+    font-size: 15pt;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.button-area-2
+{
+    height: 25%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-area-2 button
+{
+    height: 40px;
+}
+.button-area-2 button:hover
+{
+    background-color: transparent;
+}
+                         /* Footer */
+footer
+{
+    border: none;
+    width: 100%;
+    height: 27px;
+    bottom: 0;
+    text-align: center;
+    font-size: 9pt;
+} 
+                          /* Mobile */
+@media screen and (max-width: 480px)
+{
+    main
+    {
+        height: 100vh;
+        margin: 15px;
+    }
+    .button-area-1
+    {
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button-area-1 button
+    {
+        width: 90%;
+    }
+    .box-2
+    {
+        width: 100%;
+    }
+    .button-area-2 button
+    {
+        width: 90%;
+    }
+}    

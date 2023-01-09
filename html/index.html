@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/4a0d22c9cc.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/wolft.png">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1>Encriptador</h1>
+    </header>
+    <main>
+        <div class="box-1">
+            <textarea name="area-text" id="area-text" cols="30" rows="10" placeholder="Ingrese su texto aquí" bold onkeypress="return (event.charCode >= 00 && event.charCode <= 32) || event.charCode == 241 || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 129 && event.charCode <= 163)"></textarea>
+            <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Solo letras minúsculas y sin acentos</span>
+            <div class="button-area-1">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        
+        <div class="box-2">
+            <textarea name="panel" id="panel" cols="30" rows="10"></textarea>
+            <div class="button-area-2">
+                <button id="copy" onclick="copiar()">Copy</button> 
+            </div>
+        </div>        
+    </main>
+    <footer>
+        <span>© Copyrigth Edwin Cevallos 2023</span>
+    </footer>
+    <script src="/javascript/index.js"></script>
+</body>
+</html>
